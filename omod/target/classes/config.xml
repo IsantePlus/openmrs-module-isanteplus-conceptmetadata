@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module configVersion="1.2">
+
+	<!-- Module Properties -->
+	<id>isanteplusconceptmetadata</id>
+	<name>iSantePlus Concept Metadata Module</name>
+	<version>1.0-SNAPSHOT</version>
+	<package>org.openmrs.module.isanteplusconceptmetadata</package>
+	<author>Panoramica</author>
+	<description>
+		Creates the metadata needed for iSantePlus concept dictionary
+	</description>
+	<updateURL>https://modules.openmrs.org/modules/download/isanteplusconceptmetadata/update.rdf</updateURL>
+	<require_version>2.0.5</require_version>
+	<!-- / Module Properties -->
+
+	
+	<!-- Required Modules -->
+	<require_modules>
+																											
+		<require_module version="1.8.1">org.openmrs.module.metadatadeploy</require_module>
+		<require_module version="1.3.1">org.openmrs.module.metadatamapping</require_module>
+		<require_module version="1.2.2">org.openmrs.module.metadatasharing</require_module>
+			
+	</require_modules>
+	<!-- / Required Modules -->
+	
+	<!-- Module Activator -->
+	<activator>org.openmrs.module.isanteplusconceptmetadata.ConceptmetadataActivator</activator>
+	
+	
+	<!-- Maps hibernate file's, if present -->
+	<mappingFiles>
+				
+	</mappingFiles>
+
+	<!-- Internationalization -->
+	<!-- All message codes should start with isanteplusconceptmetadata. -->
+	<messages>
+		<lang>en</lang>
+		<file>messages.properties</file>
+	</messages>
+	<messages>
+		<lang>fr</lang>
+		<file>messages_fr.properties</file>
+	</messages>
+	<messages>
+		<lang>es</lang>
+		<file>messages_es.properties</file>
+	</messages>
+	<!-- /Internationalization -->
+
+</module>
+
