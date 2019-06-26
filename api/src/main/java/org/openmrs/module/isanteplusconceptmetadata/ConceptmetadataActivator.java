@@ -63,7 +63,10 @@ public class ConceptmetadataActivator implements ModuleActivator {
 	public void started() {
 		//check if the default user responsible for setting up metadata is set
 		try {
-			installMetadataPackageIfNecessary(IsanteplusMetadataUtils._PackageUuids.METADATA_GROUPING_CONCEPTS_SMALL_UUID, IsanteplusMetadataUtils._PackageNames.METADATA_GROUPING_CONCEPTS_SMALL);
+			installMetadataPackageIfNecessary(IsanteplusMetadataUtils._PackageUuids.METADATA_GROUPING_CONCEPTS_PART1_UUID, IsanteplusMetadataUtils._PackageNames.METADATA_GROUPING_CONCEPTS_PART1);
+			installMetadataPackageIfNecessary(IsanteplusMetadataUtils._PackageUuids.METADATA_GROUPING_CONCEPTS_PART2_UUID, IsanteplusMetadataUtils._PackageNames.METADATA_GROUPING_CONCEPTS_PART2);
+			installMetadataPackageIfNecessary(IsanteplusMetadataUtils._PackageUuids.METADATA_GROUPING_CONCEPTS_PART3_UUID, IsanteplusMetadataUtils._PackageNames.METADATA_GROUPING_CONCEPTS_PART3);
+			installMetadataPackageIfNecessary(IsanteplusMetadataUtils._PackageUuids.METADATA_GROUPING_CONCEPTS_PART4_UUID, IsanteplusMetadataUtils._PackageNames.METADATA_GROUPING_CONCEPTS_PART4);
 		} catch (Exception ex) {
 			throw new RuntimeException("Failed to setup initial data", ex);
 		}
